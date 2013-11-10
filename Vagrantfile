@@ -45,8 +45,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.add_recipe "chef-selenium::addrepos"
     chef.add_recipe "chef-selenium::firefox"
     chef.add_recipe "chef-selenium::chrome"
-    chef.add_recipe "chef-selenium::node"
-    chef.add_recipe "chef-selenium::hub"
+    chef.add_recipe "chef-selenium::server"
     chef.add_recipe "chef-selenium::tests"
   end
 
